@@ -1,0 +1,18 @@
+<div class ="container">
+  <form name="forecastForm">
+    <div class ="form-group">
+      <div ng-if ="forecastForm.query.$touched"
+           ng-show ="forecastForm.query.$error.required"
+      >Query is Required</div>
+      <label for="query">Enter City Below</label>
+      <input type="text" name ="query" ng-model = "mainCtrl.query" required = "required" class = "form-control">
+    </div>
+    <button class = "btn btn-primary" ng-click = "mainCtrl.getForecast()" ng-class="{disabled: forecastForm.$invalid}" ng-disabled = "forecastForm.$invalid">SUBMIT</button>
+  </form>
+  <br>
+  <div ng-if = "mainCtrl.displayResult" class = "container-fluid">
+    <div class="panel-group" id="accordian" role="tablist" aria-multipleselectable="true">
+      <current-condition-component condition="mainCtrl.currentCondition"></current-condition-component>
+      <weather-forecast-component forecast = "mainCtrl.forecast"></weather-forecast-component>
+    </div>
+  </div>

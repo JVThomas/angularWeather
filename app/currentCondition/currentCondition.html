@@ -1,0 +1,28 @@
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="currentConditionHeading">
+    <h5 class="panel-title"> Current Condition</h5>
+  </div>
+  <div id="currentCondition" class="panel" role="tabpanel" aria-labelledby="currentConditionHeading">
+    <div class="panel-body">
+      <div class="row currentWeather">
+        <div class="col-md-offset-1 col-md-3 weatherIcon">
+          <img ng-src="{{currentCtrl.condition.weather.weatherIconUrl[0].value}}" alt="">
+        </div>
+        <div class="col-md-3 weatherDetails">
+          <h4>Current Temp: {{currentCtrl.condition.weather.temp_F}}F</h4>
+          <h4>Condition: {{currentCtrl.condition.weather.weatherDesc[0].value}}</h4>
+          <h4>High: {{currentCtrl.condition.weather.high}}F</h4>
+          <h4>Low: {{currentCtrl.condition.weather.low}}F</h4>
+          <button class = "btn btn-primary" ng-click = "currentCtrl.toggleExtra()">{{currentCtrl.showExtra ? "Hide Extra Details" : "Show Extra Details"}}</button>
+        </div>
+        <div class = "col-md-4 extraDetails" ng-if = "currentCtrl.showExtra">
+          <h4>Wind Speed: {{currentCtrl.condition.weather.windspeedMiles}} mph</h4>
+          <h4>Humidity: {{currentCtrl.condition.weather.humidity}}%</h4>
+          <h4>Pressure: {{currentCtrl.condition.weather.pressure}} mbars</h4>
+          <h4>Sunrise/Sunset: {{currentCtrl.condition.sunrise}} / {{currentCtrl.condition.sunset}}</h4>
+        </div>
+      </div>
+    </div> <!-- end panel-body #currentCondition -->
+  </div> <!-- end #currentCondition div-->
+</div> <!-- end .panel of #currentcondition -->
+<br>

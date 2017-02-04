@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular Weather</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="app/css/application.css">
+</head>
+<body ng-app = "angularWeather">
+  <nav class ="navbar navbar-default">
+    <div class="container-fluid">
+      <div class ="navbar-brand">AngularWeather</div>
+    </div>
+  </nav>
+
+  <ui-view></ui-view>
+
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src = "node_modules/chart.js/dist/chart.min.js"></script>
+  <script src = "node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+  <script src = "app/app.js"></script>
+  <script src = "app/main/MainController.js"></script>
+  <script src = "app/service/WorldWeatherService.js"></script>
+  <script src = "app/currentCondition/currentConditionComponent.js"></script>
+  <script src = "app/weatherForecast/weatherForecastComponent.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="forecastGraphHeading">
+    <h5 class="panel-title"> 7 Day Forecast</h5>
+  </div>
+  <div id="forecastGraph" class="panel" role="tabpanel" aria-labelledby="forecsatGraphHeading">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-12">
+          <canvas id="line" class="chart chart-line" chart-data="forecastCtrl.data"
+                  chart-labels="forecastCtrl.labels" chart-series="forecastCtrl.series"
+                  chart-options="forecastCtrl.options">
+          </canvas
+        </div>
+      </div>
+    </div> <!-- end panel-body #forecsatGraph -->
+  </div> <!-- end #forecsatGraph div-->
+</div> <!-- end .panel of #forecastGraph -->
+<br>
