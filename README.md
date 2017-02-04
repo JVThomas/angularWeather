@@ -38,3 +38,4 @@ An AngularJS focused take home test for Front-end Developers.
 + Speaking of components, I made the line graph section a component rather than a directive since there was no need to use link functions to modify the DOM and/or add event listeners.
 + First time using Bootstrap (usually used MaterializeCSS for my projects). Wasn't a bad experience using it, however it's specialized tags and attributes makes its components/css a bit restrictive.
 + I used Angular 1.5.8 as provided in the zip file. While the actual file is not in the repo, the package.json and yarn.lock files both list it as a dependency.
++ Project is just an Angular front-end, so you'll have to run "python -m SimpleHTTPServer" to get it started.
