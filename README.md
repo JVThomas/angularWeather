@@ -31,9 +31,10 @@ An AngularJS focused take home test for Front-end Developers.
 + __Bonus:__ Was this too easy? Want to make it a real app? Use the [Yahoo's Weather API](https://developer.yahoo.com/weather/) or [Open Weather API](https://openweathermap.org/api) with the default location set to New York, NY, and allow the user to change the location by zip code.
 
 ## My (Justin Thomas) Notes On Project
-+ I opted to use the WorldWeatherOnline Weather API since Yahoo's API is no longer stable and OpenWeatherMap's daily forecast is only available under their subscription based APIs. Anyone can sign up for a premium key that is free for about 2 months, so I'd advise future candidates to use it for this project.
-+ I used Charts.js and Angular Charts to create the multi line graph of the forecast data
++ I opted to use the WorldWeatherOnline Weather API since Yahoo's API is no longer stable and OpenWeatherMap's daily forecast is only available under their subscription based APIs. Anyone can sign up for a premium key that is free for about 2 months, so I'd advise future candidates to get one for this project.
++ I used Charts.js and Angular Charts to create the multi-line graph of the forecast data
 + Overall most of the time on this project was spent on styling, searching/messing around with weather APIs, and learning the ins and outs of Charts.js (though there's still a lot more for me to learn).
-+ The actual creation and wiring of components, controllers, routes, and services was pretty straightforward. Regardless, this project was a good opportunity to practice design.
++ The actual creation and wiring of components, controllers, routes, and services was pretty straightforward. Regardless, this project was a good opportunity for me to practice design.
 + Speaking of components, I made the line graph section a component rather than a directive since there was no need to use link functions to modify the DOM and/or add event listeners.
 + First time using Bootstrap (usually used MaterializeCSS for my projects). Wasn't a bad experience using it, however it's specialized tags and attributes makes its components/css a bit restrictive.
++ I used Angular 1.5.8 as provided in the zip file. While the actual file is not in the repo, the package.json and yarn.lock files both list it as a dependency.
