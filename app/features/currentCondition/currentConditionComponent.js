@@ -2,7 +2,7 @@ var currentConditionComponent = {
   bindings: {
     condition: '='
   },
-  templateUrl: 'app/currentCondition/currentCondition.html',
+  templateUrl: 'app/features/currentCondition/currentCondition.html',
   controllerAs: 'currentCtrl',
   controller: function () {
     var ctrl = this;

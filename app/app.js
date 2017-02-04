@@ -5,7 +5,7 @@ angular
       .state('main', {
         url: '/',
         controller: 'MainController as mainCtrl',
-        templateUrl: 'app/main/main.html'
+        templateUrl: 'app/features/main/main.html'
       })
     $urlRouterProvider.otherwise('/');
   }]);

@@ -2,7 +2,7 @@ var weatherForecastComponent = {
   bindings:{
     forecast: '='
   },
-    templateUrl: 'app/weatherForecast/weatherForecast.html',
+    templateUrl: 'app/features/weatherForecast/weatherForecast.html',
     controllerAs: 'forecastCtrl',
     controller: function () {
       var ctrl = this;
